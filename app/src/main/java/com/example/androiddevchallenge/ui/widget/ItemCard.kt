@@ -13,43 +13,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.data
+package com.example.androiddevchallenge.ui.widget
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.*
+import androidx.compose.material.Icon
+import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandMore
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.Password
-import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.navigation.compose.navigate
-import com.example.androiddevchallenge.AppDestinations
+import com.example.androiddevchallenge.data.ItemData
 import com.example.androiddevchallenge.ui.theme.white
-import com.example.androiddevchallenge.ui.theme.yellow
 
 @Composable
 fun ItemCard(
-    item: ItemData) {
+    item: ItemData
+) {
     Box(
         modifier = Modifier
             .clip(CircleShape)
@@ -66,7 +55,7 @@ fun ItemCard(
         Row(
             modifier = Modifier
                 .align(Alignment.Center)
-                .padding( horizontal = 24.dp)
+                .padding(horizontal = 24.dp)
 
         ) {
             Text(
@@ -81,7 +70,6 @@ fun ItemCard(
                     contentDescription = "back",
                 )
             }
-
         }
     }
 }

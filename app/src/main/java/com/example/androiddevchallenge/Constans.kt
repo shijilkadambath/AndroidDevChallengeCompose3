@@ -15,7 +15,6 @@
  */
 package com.example.androiddevchallenge
 
-import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.data.ChartData
 import com.example.androiddevchallenge.data.ItemData
 
@@ -28,21 +27,25 @@ object Constans {
         ),
         ItemData(
             name = "ETFs",
-           false
-        ), ItemData(
+            false
+        ),
+        ItemData(
             name = "Stocks",
-           false
-        ), ItemData(
+            false
+        ),
+        ItemData(
             name = "Funds",
-           false
+            false
         ),
         ItemData(
             name = "ETFs",
             false
-        ), ItemData(
+        ),
+        ItemData(
             name = "Stocks",
             false
-        ), ItemData(
+        ),
+        ItemData(
             name = "Funds",
             false
         )
@@ -53,45 +56,53 @@ object Constans {
         ChartData(
             name = "ALK",
             "Alaska air group inc",
-            "$1200","-0.54%",true,R.drawable.ic_home_alk
+            "$1200", "-0.54%", true, R.drawable.ic_home_alk
         ),
 
         ChartData(
             name = "BA",
             "Boing air group inc",
-            "$1260","1.54%",false,R.drawable.ic_home_ba
-        ),  ChartData(
+            "$1260", "1.54%", false, R.drawable.ic_home_ba
+        ),
+        ChartData(
             name = "DAL",
             "Delta air group inc",
-            "$800","1.54%",true,R.drawable.ic_home_dal
-        ),  ChartData(
+            "$800", "1.54%", true, R.drawable.ic_home_dal
+        ),
+        ChartData(
             name = "EXP",
             "expedia air group inc",
-            "$800","1.54%",false,R.drawable.ic_home_exp
-        ),  ChartData(
+            "$800", "1.54%", false, R.drawable.ic_home_exp
+        ),
+        ChartData(
             name = "EADSY",
             "Air bnb group inc",
-            "$800","4.54%",false,R.drawable.ic_home_eadsy
-        ), ChartData(
+            "$800", "4.54%", false, R.drawable.ic_home_eadsy
+        ),
+        ChartData(
             name = "JBLU",
             "jetblue air group inc",
-            "$8003","5.54%",false,R.drawable.ic_home_jblu
-        ),  ChartData(
+            "$8003", "5.54%", false, R.drawable.ic_home_jblu
+        ),
+        ChartData(
             name = "MAR",
             "Marriot group",
-            "$200","43.54%",false,R.drawable.ic_home_mar
-        ),  ChartData(
+            "$200", "43.54%", false, R.drawable.ic_home_mar
+        ),
+        ChartData(
             name = "DAL",
             "Carnival cop",
-            "$300","2.54%",false,R.drawable.ic_home_ccl
-        ),  ChartData(
+            "$300", "2.54%", false, R.drawable.ic_home_ccl
+        ),
+        ChartData(
             name = "DAL",
             "Royal carbe inc",
-            "$130","4.54%",false,R.drawable.ic_home_rcl
-        ),  ChartData(
+            "$130", "4.54%", false, R.drawable.ic_home_rcl
+        ),
+        ChartData(
             name = "TRVL",
             "Traveloc inc",
-            "$1760","3.54%",false,R.drawable.ic_home_trvl
+            "$1760", "3.54%", false, R.drawable.ic_home_trvl
         )
     )
 }

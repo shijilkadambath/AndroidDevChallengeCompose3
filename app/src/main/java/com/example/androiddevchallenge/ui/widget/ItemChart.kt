@@ -13,56 +13,47 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.data
+package com.example.androiddevchallenge.ui.widget
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
-import androidx.compose.material.ripple.rememberRipple
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Divider
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.composed
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.navigation.compose.navigate
-import com.example.androiddevchallenge.AppDestinations
-import com.example.androiddevchallenge.ui.theme.gray900
-import com.example.androiddevchallenge.ui.theme.white
-import com.example.androiddevchallenge.ui.theme.yellow
+import com.example.androiddevchallenge.data.ChartData
 
 @Composable
 fun ItemChart(
-    item: ChartData) {
+    item: ChartData
+) {
     Column {
         Divider(color = MaterialTheme.colors.onSurface, thickness = 1.dp)
-        Row{
+        Row {
             Column(
                 modifier = Modifier
-                    .padding(vertical = 16.dp,horizontal = 2.dp)
+                    .padding(vertical = 16.dp, horizontal = 2.dp)
                     .fillMaxHeight()
             ) {
-                Text(text =item.amount,
+                Text(
+                    text = item.amount,
                     style = MaterialTheme.typography.body1,
-                    color =  MaterialTheme.colors.onSurface)
+                    color = MaterialTheme.colors.onSurface
+                )
 
-                Text(text =item.percent,
+                Text(
+                    text = item.percent,
                     style = MaterialTheme.typography.body1,
-                    color =  item.getTextColor())
+                    color = item.getTextColor()
+                )
             }
 
             Column(
@@ -71,23 +62,26 @@ fun ItemChart(
                     .align(Alignment.CenterVertically)
                     .weight(1f)
             ) {
-                Text(text =item.name,
+                Text(
+                    text = item.name,
                     style = MaterialTheme.typography.h3,
-                    color =  MaterialTheme.colors.onSurface)
+                    color = MaterialTheme.colors.onSurface
+                )
 
-                Text(text =item.address,
+                Text(
+                    text = item.address,
                     style = MaterialTheme.typography.body1,
-                    color =  MaterialTheme.colors.onSurface)
+                    color = MaterialTheme.colors.onSurface
+                )
             }
 
-            Column ( modifier = Modifier.align(Alignment.CenterVertically)){
+            Column(modifier = Modifier.align(Alignment.CenterVertically)) {
                 Image(
                     painter = painterResource(item.icon),
                     contentDescription = null,
                     contentScale = ContentScale.Crop
                 )
             }
-
         }
     }
 }

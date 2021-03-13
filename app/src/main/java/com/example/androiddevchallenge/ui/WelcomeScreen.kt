@@ -17,36 +17,37 @@ package com.example.androiddevchallenge.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredHeight
+import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.navigate
 import com.example.androiddevchallenge.AppDestinations
 import com.example.androiddevchallenge.R
-import com.example.androiddevchallenge.ui.theme.*
-import kotlinx.coroutines.launch
+import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.gray900
+import com.example.androiddevchallenge.ui.theme.yellow
 
 @Composable
 fun WelcomeScreen(
@@ -76,7 +77,7 @@ fun WelcomeScreen(
 
             Row(
                 modifier = Modifier
-                    .padding(start = 16.dp,end = 16.dp,top = 32.dp,bottom = 32.dp)
+                    .padding(start = 16.dp, end = 16.dp, top = 32.dp, bottom = 32.dp)
                     .align(Alignment.BottomCenter)
             ) {
                 Button(
@@ -87,7 +88,7 @@ fun WelcomeScreen(
 
                     onClick = { }
                 ) {
-                    Text(text ="GET STARTED",color = gray900)
+                    Text(text = "GET STARTED", color = gray900)
                 }
                 Spacer(modifier = Modifier.requiredWidth(8.dp))
                 Button(
@@ -105,16 +106,15 @@ fun WelcomeScreen(
                     colors = ButtonDefaults.buttonColors(
                         backgroundColor = Color.Transparent
                     ),
-                    onClick = { navController!!.navigate(AppDestinations.LOGIN)}
+                    onClick = { navController!!.navigate(AppDestinations.LOGIN) }
                 ) {
-                    Text(text ="LOG IN",
-                            color = yellow)
+                    Text(
+                        text = "LOG IN",
+                        color = yellow
+                    )
                 }
             }
-
         }
-
-
     }
 }
 
