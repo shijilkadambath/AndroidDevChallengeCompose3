@@ -27,8 +27,6 @@ val green = Color(0xFF39A844)
 val red = Color(0xFFD93C19)
 val white_light = Color(0x26FFFFFF)
 
-
-
 /*val primaryLight = Color(0xFFFF1F1)
 val secondaryLight = Color(0xFF3F2C2C)
 val primaryDark = Color(0xFF2D3B2D)

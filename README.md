@@ -8,23 +8,18 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-Apps to search and adopt puppies on selected area. You can see puppies list with pics and basic details, and full details on details page.
-
-App provide an options to search and change selected geo area
+Learn Android Jetpack compose with building Trade app
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-Simple and elegant design can attract or stay users to application also they can shortlist using favorite.
-
-its support both dark and light mode depends on device settings
-
+Participate in the #AndroidDevChallenge and learn Jetpack Compose
 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
-<img src="/results/screenshot_dark_1.png" width="260">&emsp;<img src="/results/screenshot_dark_2.png" width="260">
+<img src="/results/1.png" width="260">&emsp;<img src="/results/2.png" width="260">&emsp;<img src="/results/3.png" width="260">
+<img src="/results/22.png" width="260">&emsp;<img src="/results/33.png" width="260">&emsp;<img src="/results/44.png" width="260">
 
 ## License
 ```

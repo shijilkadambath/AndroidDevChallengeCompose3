@@ -42,7 +42,7 @@ val typography = Typography(
     h2 = TextStyle(
         fontFamily = montserratFamily,
         fontWeight = FontWeight.ExtraBold,
-        letterSpacing = 0.em,
+        letterSpacing = 0.25.em,
         fontSize = 36.sp,
     ),
     h3 = TextStyle(

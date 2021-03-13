@@ -83,7 +83,7 @@ fun LoginScreen(
                     style = MaterialTheme.typography.h2,
                     color = white,
                     modifier = Modifier
-                        .padding(16.dp)
+                        .padding(horizontal = 32.dp)
                         .align(Alignment.Center),
                 )
             }

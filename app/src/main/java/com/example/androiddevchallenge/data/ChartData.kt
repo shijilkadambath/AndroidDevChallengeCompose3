@@ -25,7 +25,7 @@ data class ChartData(
     val percent: String,
     val low: Boolean,
     val icon: Int
-){
+) {
 
-    fun getTextColor()= if (low) red else green
+    fun getTextColor() = if (low) red else green
 }
